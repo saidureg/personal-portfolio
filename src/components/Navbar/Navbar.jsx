@@ -1,8 +1,9 @@
 import { DiCssdeck } from "react-icons/di";
 
 const Navbar = () => {
-  const redirectToGithub = () => {
-    window.location.href = "https://github.com/saidureg";
+  const redirectToResume = () => {
+    window.location.href =
+      "https://drive.google.com/file/d/1s2SEOBabnAo_tXxoTApf13oEupsm1mVr/view?usp=drive_link";
   };
   const navItems = (
     <>
@@ -85,8 +86,8 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a className="flex items-center gap-1 text-2xl">
-            <DiCssdeck className="text-5xl" /> Portfolio
+          <a className="flex items-center gap-1 text-xl md:text-2xl">
+            <DiCssdeck className="text-3xl md:text-5xl" /> Portfolio
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -94,10 +95,10 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <button
-            onClick={redirectToGithub}
-            className="px-5 py-3 border border-primary rounded-2xl btn-outline text-white transition-all duration-700 ease-in-out hover:btn-primary"
+            onClick={redirectToResume}
+            className="px-2 md:px-5 py-2 md:py-3 border border-primary rounded-2xl btn-outline text-white transition-all duration-700 ease-in-out hover:btn-primary"
           >
-            Github Profile
+            Check Resume
           </button>
         </div>
       </div>

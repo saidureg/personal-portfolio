@@ -1,14 +1,21 @@
 import hero from "../../assets/hero.jpg";
 import { TypeAnimation } from "react-type-animation";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import {
   FaCloudDownloadAlt,
   FaGithub,
+  FaInstagram,
   FaLinkedin,
   FaTelegram,
-  FaWhatsapp,
 } from "react-icons/fa";
 import BgAnimation from "./BgAnimation/BgAnimation";
 const Banner = () => {
+  const driveFileId = "1s2SEOBabnAo_tXxoTApf13oEupsm1mVr";
+  const resumeLink = `https://drive.google.com/uc?export=download&id=${driveFileId}`;
+
+  const handleDownload = () => {
+    window.location.href = resumeLink;
+  };
   return (
     <div id="home" className="bg-neutral text-neutral-content">
       <div className="hero lg:h-[80vh]">
@@ -20,27 +27,40 @@ const Banner = () => {
             className="w-[300px] h-[280px] lg:h-[500px] lg:w-[500px] rounded-full shadow-2xl"
           />
           <div className="space-y-5 lg:px-5">
-            <h3 className="text-5xl font-semibold mb-3">Hi, I am</h3>
-            <span className="text-2xl text-orange-700 font-medium">
-              <TypeAnimation
-                sequence={[
-                  "Saidur Rahaman",
-                  1000,
-                  "a Web Developer",
-                  1000,
-                  "a Front End Developer",
-                  1000,
-                  "a MERN Stack Developer",
-                  1000,
-                  "a React Developer",
-                  1000,
-                ]}
-                wrapper="span"
-                speed={50}
-                style={{ fontSize: "2em", display: "inline-block" }}
-                repeat={Infinity}
-              />
-            </span>
+            <h3 className="text-5xl font-semibold mb-3">
+              Hi, I am <br />
+              <span className="text-3xl md:text-4xl text-[#854ce6]">
+                Saidur Rahaman
+              </span>{" "}
+            </h3>
+            <h4 className="text-xl md:text-5xl font-medium">
+              I am a
+              <span className="text-lg md:text-2xl text-orange-700 font-medium">
+                <TypeAnimation
+                  sequence={[
+                    "Full Stack Developer",
+                    1000,
+                    "Web Developer",
+                    1000,
+                    "Front End Developer",
+                    1000,
+                    "MERN Stack Developer",
+                    1000,
+                    "React Developer",
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={20}
+                  style={{
+                    fontSize: "2em",
+                    marginLeft: "1rem",
+                    display: "inline-block",
+                  }}
+                  repeat={Infinity}
+                />
+              </span>
+            </h4>
+
             <p className="lg:w-3/4 text-gray-400">
               I am a motivated and versatile individual, always eager to take on
               new challenges. With a passion for learning I am dedicated to
@@ -59,15 +79,18 @@ const Banner = () => {
                 <FaTelegram className="text-2xl" />
               </a>
               <a href="">
-                <FaWhatsapp className="text-2xl" />
+                <FaInstagram className="text-2xl" />
               </a>
             </div>
-            <div>
-              <button className="btn btn-outline btn-secondary mr-4">
-                Hire Me
+            <div className="flex items-center gap-4">
+              <button className="btn btn-outline btn-secondary md:text-xl">
+                Hire Me <MdKeyboardArrowRight className="text-2xl" />
               </button>
-              <button className="btn btn-primary">
-                Download Resume <FaCloudDownloadAlt className="text-2xl" />
+              <button
+                onClick={handleDownload}
+                className="btn btn-primary text-xl"
+              >
+                Resume <FaCloudDownloadAlt className="md:text-2xl" />
               </button>
             </div>
           </div>
