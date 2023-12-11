@@ -18,7 +18,7 @@ const Banner = () => {
   };
   return (
     <div id="home" className="bg-neutral text-neutral-content">
-      <div className="hero lg:h-[80vh]">
+      <div className="hero lg:h-[90vh] pt-12">
         <BgAnimation />
         <div className="hero-content flex-col lg:flex-row-reverse ">
           <img
