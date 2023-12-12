@@ -38,7 +38,7 @@ const Contact = () => {
         <p className="text-center text-xl text-gray-400 font-medium my-5">
           Feel free to reach out to me for any questions or opportunities!
         </p>
-        <div className="bg-[#171721] w-3/5 mx-auto rounded-xl">
+        <div className="bg-[#171721] w-10/12 md:w-3/5 mx-auto rounded-xl">
           <h3 className="text-3xl pt-6 px-4 font-bold flex items-center gap-2">
             Email Me <MdRocketLaunch />
           </h3>

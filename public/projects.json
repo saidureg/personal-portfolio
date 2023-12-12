@@ -6,7 +6,8 @@
 
     "links": {
       "view": "https://tech-wave-hub.web.app/",
-      "code": "https://github.com/saidureg/tech-product-discovery-platform-client"
+      "server_code": "https://github.com/saidureg/tech-product-discovery-platform-server",
+      "client_code": "https://github.com/saidureg/tech-product-discovery-platform-client"
     }
   },
   {
@@ -16,17 +17,19 @@
 
     "links": {
       "view": "https://luxe-lair-hotel.web.app/",
-      "code": "https://github.com/saidureg/Hotel-Booking-client"
+      "server_code": "https://github.com/saidureg/Hotel-Booking-server",
+      "client_code": "https://github.com/saidureg/Hotel-Booking-client"
     }
   },
   {
     "name": "NexGen",
-    "desc": "In this web application allows users to seamlessly browse, add, update, and view various electronic products, and explore products by brand, and even add them to their cart for easy purchasing.",
+    "desc": "In this web application allows users to seamlessly browse, add, update, view various electronic products, explore products by brand, and even add them to their cart for easy purchasing.",
     "image": "https://i.ibb.co/JCbRNqX/brand-shop.png",
 
     "links": {
       "view": "https://brand-shop-62b1f.web.app/",
-      "code": "https://github.com/saidureg/Brand-Shop-client"
+      "server_code": "https://github.com/saidureg/Brand-Shop-server",
+      "client_code": "https://github.com/saidureg/Brand-Shop-client"
     }
   }
 ]

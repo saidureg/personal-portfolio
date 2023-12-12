@@ -26,23 +26,25 @@ const ProjectCard = ({ project }) => {
             <p className="mb-3 p-2 text-left text-lg  font-medium text-black opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               {project?.desc}
             </p>
-            <div className="grid grid-cols-3 gap-2  mx-2">
-              <button className="rounded-full bg-neutral-900 px-3.5 py-2 font-com text-sm capitalize text-white shadow shadow-black/60">
-                Details
-              </button>
-
+            <div className="grid grid-cols-3 gap-2 mx-2">
               <button
                 onClick={() => openInNewTab(project?.links?.view)}
-                className="rounded-full bg-neutral-900 px-3.5 py-2 font-com text-sm capitalize text-white shadow shadow-black/60"
+                className="rounded-full bg-neutral-900 p-2 text-sm capitalize text-white shadow shadow-black/60"
               >
-                Live Link
+                Live Site
               </button>
 
               <button
-                onClick={() => openInNewTab(project?.links?.code)}
-                className="rounded-full bg-neutral-900 px-3.5 py-2 font-com text-sm capitalize text-white shadow shadow-black/60"
+                onClick={() => openInNewTab(project?.links?.client_code)}
+                className="rounded-full bg-neutral-900 p-2 text-sm capitalize text-white shadow shadow-black/60"
               >
-                Code
+                Client Code
+              </button>
+              <button
+                onClick={() => openInNewTab(project?.links?.server_code)}
+                className="rounded-full bg-neutral-900 p-2 text-sm capitalize text-white shadow shadow-black/60"
+              >
+                Server Code
               </button>
             </div>
           </div>

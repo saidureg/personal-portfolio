@@ -38,12 +38,10 @@ const Education = () => {
             <div className="timeline-end mb-10 border rounded-xl  p-2 bg-[#575c66] shadow-md shadow-amber-300">
               <div className="space-y-2">
                 <time className="font-mono italic">
-                  Diploma in Engineering of Computer Technology
+                  Complete Web Development Course With Jhankar Mahbub
                 </time>
-                <div className="text-lg font-semibold">
-                  Chittagong Polytechnic Institute, Chittagong
-                </div>
-                Jun 2015 - Jul 2019
+                <div className="text-lg font-semibold">Programming Hero</div>
+                Jul 2023 - Dec 2023
               </div>
             </div>
             <hr className="bg-primary" />
@@ -56,10 +54,12 @@ const Education = () => {
             <div className="timeline-start md:text-end mb-10 border rounded-xl  p-2 bg-[#575c66] shadow-md shadow-amber-300">
               <div className="space-y-2">
                 <time className="font-mono italic">
-                  Complete Web Development Course With Jhankar Mahbub
+                  Diploma in Engineering of Computer Technology
                 </time>
-                <div className="text-lg font-semibold">Programming Hero</div>
-                Jul 2023 - Dec 2023
+                <div className="text-lg font-semibold">
+                  Chittagong Polytechnic Institute, Chittagong
+                </div>
+                Jun 2015 - Jul 2019
               </div>
             </div>
             <hr className="bg-primary" />
