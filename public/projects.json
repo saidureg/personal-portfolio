@@ -1,0 +1,32 @@
+[
+  {
+    "name": "TechWave",
+    "desc": "TechWave is a simple MEARN stack project where user can see latest tech product. User can also give upvote and down vote. There were 3 role user , moderator and admin.",
+    "image": "https://i.ibb.co/vLxZr9J/tech-wave-hub-web.png",
+
+    "links": {
+      "view": "https://tech-wave-hub.web.app/",
+      "code": "https://github.com/saidureg/tech-product-discovery-platform-client"
+    }
+  },
+  {
+    "name": "LuxeLair Hotel",
+    "desc": "Hotel Booking Web Application! In this application allows users to browse available rooms, book rooms, leave reviews, and manage their bookings.",
+    "image": "https://i.ibb.co/ydP72Bd/luxe-lair-hotel-web-app-rooms.png",
+
+    "links": {
+      "view": "https://luxe-lair-hotel.web.app/",
+      "code": "https://github.com/saidureg/Hotel-Booking-client"
+    }
+  },
+  {
+    "name": "NexGen",
+    "desc": "In this web application allows users to seamlessly browse, add, update, and view various electronic products, and explore products by brand, and even add them to their cart for easy purchasing.",
+    "image": "https://i.ibb.co/JCbRNqX/brand-shop.png",
+
+    "links": {
+      "view": "https://brand-shop-62b1f.web.app/",
+      "code": "https://github.com/saidureg/Brand-Shop-client"
+    }
+  }
+]
