@@ -7,11 +7,21 @@ const Footer = () => {
           Saidur Rahaman
         </p>
         <nav className="flex flex-wrap md:grid md:grid-flow-col gap-4 md:text-xl">
-          <a className="link link-hover">About</a>
-          <a className="link link-hover">Skills</a>
-          <a className="link link-hover">Experience</a>
-          <a className="link link-hover">Projects</a>
-          <a className="link link-hover">Education</a>
+          <a href="#home" className="link link-hover">
+            About
+          </a>
+          <a href="#skills" className="link link-hover">
+            Skills
+          </a>
+          <a href="#experience" className="link link-hover">
+            Experience
+          </a>
+          <a href="#projects" className="link link-hover">
+            Projects
+          </a>
+          <a href="#education" className="link link-hover">
+            Education
+          </a>
         </nav>
       </div>
 

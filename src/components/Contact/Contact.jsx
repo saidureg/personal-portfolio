@@ -33,7 +33,7 @@ const Contact = () => {
         <h3 className="text-4xl mb-2 font-bold flex items-center justify-center gap-2">
           {" "}
           <FaHeadset />
-          Get In <span>Touch</span>
+          Get In <span className="text-amber-400">Touch</span>
         </h3>
         <p className="text-center text-xl text-gray-400 font-medium my-5">
           Feel free to reach out to me for any questions or opportunities!

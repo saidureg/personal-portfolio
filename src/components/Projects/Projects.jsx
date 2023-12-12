@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <div id="projects" className="bg-gradient-to-b from-[#000031] to-[#00002c]">
       <div className="px-10 pt-10 pb-20 max-w-screen-xl mx-auto">
-        <div className="text-white text-center text-3xl font-bold mb-8">
+        <div className="text-white text-center text-4xl font-bold mb-8">
           <h2 className="flex items-center justify-center gap-2">
             {" "}
             <FaLaptopCode /> My <span className="text-[#ffd900]">Projects</span>

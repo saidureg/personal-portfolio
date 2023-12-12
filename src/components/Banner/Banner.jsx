@@ -83,9 +83,11 @@ const Banner = () => {
               </a>
             </div>
             <div className="flex items-center gap-4">
-              <button className="btn btn-outline btn-secondary md:text-xl">
-                Hire Me <MdKeyboardArrowRight className="text-2xl" />
-              </button>
+              <a href="#contact">
+                <button className="btn btn-outline btn-secondary md:text-xl">
+                  Hire Me <MdKeyboardArrowRight className="text-2xl" />
+                </button>
+              </a>
               <button
                 onClick={handleDownload}
                 className="btn btn-primary text-xl"
