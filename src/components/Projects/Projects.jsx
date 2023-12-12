@@ -6,13 +6,12 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("../../../public/projects.json")
+    fetch("projects.json")
       .then((response) => response.json())
       .then((data) => setProjects(data));
   }, []);
-  console.log(projects);
   return (
-    <div className="bg-gradient-to-b from-[#000031] to-[#00002c]">
+    <div id="projects" className="bg-gradient-to-b from-[#000031] to-[#00002c]">
       <div className="px-10 pt-10 pb-20 max-w-screen-xl mx-auto">
         <div className="text-white text-center text-3xl font-bold mb-8">
           <h2 className="flex items-center justify-center gap-2">
