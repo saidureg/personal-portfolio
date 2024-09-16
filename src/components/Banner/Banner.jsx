@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import BgAnimation from "./BgAnimation/BgAnimation";
 const Banner = () => {
-  const driveFileId = "1s2SEOBabnAo_tXxoTApf13oEupsm1mVr";
+  const driveFileId = "1nL0-MuR-B1rVRtAT-f4jrFQ8yTAbjMkJ";
   const resumeLink = `https://drive.google.com/uc?export=download&id=${driveFileId}`;
 
   const handleDownload = () => {

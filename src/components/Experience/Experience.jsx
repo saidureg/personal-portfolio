@@ -16,23 +16,29 @@ const Experience = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="Jun 2022 - Dec 2023"
+          date="Jun 2024 - Present"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<FaUserTie />}
         >
           <h3 className="vertical-timeline-element-title">
-            Full Stack Developer
+            Front-End Developer
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            ABC Inovations Ltd.
-          </h4>
+          <h4 className="vertical-timeline-element-subtitle">A Maze Venture</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-            harum.
+            As a Front-End Developer at Amaze Venture, I created and developed a
+            dashboard that provides real-time campaign metrics for advertisers
+            and publishers. I also developed a campaign tracker website for
+            monitoring and tagging campaigns with detailed analytics. In
+            addition, I designed and implemented the front-end architecture and
+            user interface for two major web applications, ensuring a seamless
+            user experience. I created rich media banners with animations and
+            interactive elements, tailored to client specifications, and
+            collaborated closely with clients to deliver responsive designs that
+            met their business needs.
           </p>
           <p>
-            Skills: • ReactJS • Redux • NodeJs • Material UI • HTML • CSS •
-            JavaScript
+            Skills: • ReactJS • ExpressJS • Redux • Material UI • HTML • CSS •
+            JavaScript • Gsap • Framer Motion • Tailwind CSS
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
