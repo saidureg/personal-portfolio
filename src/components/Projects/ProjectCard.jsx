@@ -157,7 +157,7 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         {/* Hover Indicator */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500">
+        <div className="absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500">
           <div className="flex items-center gap-2 text-white bg-gradient-to-r from-black/80 to-black/60 px-4 py-2 rounded-full backdrop-blur-lg border border-white/40 shadow-2xl group-hover:scale-110 transition-transform duration-300">
             <FaEye className="text-sm animate-pulse" />
             <span className="text-sm font-bold tracking-wide">
