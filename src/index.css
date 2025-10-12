@@ -2,3 +2,436 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom animations for Skills component */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(255, 230, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 230, 0, 0.6), 0 0 30px rgba(255, 230, 0, 0.4);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+/* Custom utility classes */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 0.6s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  background-size: 200px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ffe600, #ff6b35);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #ff6b35, #ffe600);
+}
+
+/* Custom Timeline Styling */
+.vertical-timeline::before {
+  background: linear-gradient(180deg, #ffe600, #4a00e0, #ff6b35) !important;
+  width: 4px !important;
+  border-radius: 2px !important;
+  box-shadow: 0 0 20px rgba(255, 230, 0, 0.3) !important;
+}
+
+.vertical-timeline-element-content {
+  border-radius: 20px !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.3s ease !important;
+}
+
+.vertical-timeline-element-content:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+.vertical-timeline-element-date {
+  color: #ffe600 !important;
+  font-weight: bold !important;
+  font-size: 1.1rem !important;
+  text-shadow: 0 0 10px rgba(255, 230, 0, 0.5) !important;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 20px rgba(255, 230, 0, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.vertical-timeline-element-icon:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 0 30px rgba(255, 230, 0, 0.6) !important;
+}
+
+/* Timeline Arrow Styling */
+.vertical-timeline-element-content-arrow {
+  border-right-color: transparent !important;
+  border-left-color: transparent !important;
+}
+
+/* Custom Timeline for Education - Now using VerticalTimeline */
+.vertical-timeline-element--education .vertical-timeline-element-content {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 230, 0, 0.1),
+    rgba(0, 0, 0, 0.9)
+  ) !important;
+  border: 2px solid rgba(255, 230, 0, 0.3) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(255, 230, 0, 0.2),
+    0 0 20px rgba(255, 230, 0, 0.1) !important;
+}
+
+.vertical-timeline-element--education .vertical-timeline-element-content:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+.vertical-timeline-element--education .vertical-timeline-element-icon {
+  background: #ffe600 !important;
+  color: #000 !important;
+  box-shadow: 0 0 20px rgba(255, 230, 0, 0.4) !important;
+}
+
+.vertical-timeline-element--education .vertical-timeline-element-icon:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 0 30px rgba(255, 230, 0, 0.6) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .vertical-timeline-element-content {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+  .timeline-start,
+  .timeline-end {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}
+
+/* Project Card Animations */
+@keyframes projectCardFloat {
+  0%,
+  100% {
+    transform: translateY(0px) rotateX(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotateX(1deg);
+  }
+}
+
+@keyframes projectGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 230, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 230, 0, 0.4);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-project-float {
+  animation: projectCardFloat 6s ease-in-out infinite;
+}
+
+.animate-project-glow {
+  animation: projectGlow 3s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+/* Project Card Hover Effects */
+.project-card {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.project-card:hover {
+  transform: translateY(-16px) scale(1.05) rotateX(3deg);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(255, 230, 0, 0.3);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.15) rotateX(-3deg);
+  filter: brightness(1.25) contrast(1.25) saturate(1.5);
+}
+
+/* Enhanced Button Styles */
+.btn-primary-project {
+  background: linear-gradient(135deg, #ffe600, #ff6b35);
+  color: black;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary-project:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 230, 0, 0.3);
+}
+
+.btn-primary-project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-primary-project:hover::before {
+  left: 100%;
+}
+
+.btn-secondary-project {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-secondary-project:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 230, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-secondary-project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 230, 0, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-secondary-project:hover::before {
+  left: 100%;
+}
+
+/* Advanced 3D Effects */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.rotate-x-2 {
+  transform: rotateX(2deg);
+}
+
+/* Line clamp utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Additional animations for Experience and Education */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 1s ease-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+/* Enhanced hover effects */
+.group:hover .timeline-middle {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 230, 0, 0.6);
+}
+
+.group:hover .timeline-start,
+.group:hover .timeline-end {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}

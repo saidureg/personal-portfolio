@@ -18,7 +18,6 @@ function App() {
       <Projects />
       <Education />
       <Contact />
-
       <Footer />
     </div>
   );
