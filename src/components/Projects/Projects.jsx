@@ -18,7 +18,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="relative bg-gradient-to-b from-[#000031] to-[#00002c] pt-20 min-h-screen overflow-hidden"
+      className="relative bg-gradient-to-b from-[#000031]/70 to-[#00002c]/60 pt-20 min-h-screen overflow-hidden backdrop-blur-sm"
     >
       {/* Background Decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

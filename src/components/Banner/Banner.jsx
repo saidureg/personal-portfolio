@@ -19,7 +19,7 @@ const Banner = () => {
   return (
     <div
       id="home"
-      className="relative bg-gradient-to-b from-[#000020] via-[#000030] to-[#000040] text-neutral-content overflow-hidden"
+      className="relative bg-gradient-to-b from-[#000020]/80 via-[#000030]/70 to-[#000040]/60 text-neutral-content overflow-hidden backdrop-blur-sm"
     >
       <div className="hero lg:h-[90vh] pt-12">
         <BgAnimation />

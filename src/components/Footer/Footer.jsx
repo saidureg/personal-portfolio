@@ -31,7 +31,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#00002c] to-[#000020] text-white overflow-hidden">
+    <footer className="relative bg-gradient-to-b from-[#00002c]/60 to-[#000020]/80 text-white overflow-hidden backdrop-blur-sm">
       {/* Background Decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Floating Orbs */}

@@ -57,7 +57,7 @@ const Education = () => {
   return (
     <div
       id="education"
-      className="bg-gradient-to-b from-[#00002c] to-[#000031] pb-20 w-full min-h-screen"
+      className="bg-gradient-to-b from-[#00002c]/60 to-[#000031]/70 pb-20 w-full min-h-screen backdrop-blur-sm"
     >
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}

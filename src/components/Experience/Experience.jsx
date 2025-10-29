@@ -69,7 +69,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="bg-gradient-to-b from-[#000031] to-[#00002c] py-20 w-full min-h-screen"
+      className="bg-gradient-to-b from-[#000031]/70 to-[#00002c]/60 py-20 w-full min-h-screen backdrop-blur-sm"
     >
       {/* Header Section */}
       <div className="text-center pb-20 px-4 relative">
@@ -173,6 +173,7 @@ const Experience = () => {
             </VerticalTimelineElement>
           ))}
 
+          {/* End marker icon only */}
           <VerticalTimelineElement
             iconStyle={{
               background: "#ffe600",

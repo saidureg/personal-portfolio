@@ -18,7 +18,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="bg-gradient-to-b from-[#000031] to-[#00002c] py-20 w-full min-h-screen"
+      className="bg-gradient-to-b from-[#000031]/70 to-[#00002c]/60 py-20 w-full min-h-screen backdrop-blur-sm"
     >
       {/* Header Section */}
       <div className="text-center pb-16 px-4">

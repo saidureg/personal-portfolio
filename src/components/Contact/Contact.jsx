@@ -53,7 +53,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="relative bg-gradient-to-b from-[#000031] to-[#00002c] py-20 min-h-screen overflow-hidden"
+      className="relative bg-gradient-to-b from-[#000031]/70 to-[#00002c]/60 py-20 min-h-screen overflow-hidden backdrop-blur-sm"
     >
       {/* Background Decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
